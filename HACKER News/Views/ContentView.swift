@@ -35,7 +35,7 @@ struct ContentView: View {
         }
         
         .onLongPressGesture {
-            //
+            // testowy branch
         }
     }
 }
