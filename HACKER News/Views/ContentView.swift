@@ -34,7 +34,8 @@ struct ContentView: View {
             self.networkManager.fetchData()
         }
         
-        .onDisappear() {
+        .onLongPressGesture {
+            //
         }
     }
 }
