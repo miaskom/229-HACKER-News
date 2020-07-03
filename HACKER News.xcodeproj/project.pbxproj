@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD4142A024AC8911001E40B6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41429F24AC8911001E40B6 /* DetailView.swift */; };
+		FD4142A224ACB188001E40B6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4142A124ACB188001E40B6 /* WebView.swift */; };
 		FDAD1C1724AB304200AD9D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD1C1624AB304200AD9D37 /* AppDelegate.swift */; };
 		FDAD1C1924AB304200AD9D37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD1C1824AB304200AD9D37 /* SceneDelegate.swift */; };
 		FDAD1C1B24AB304200AD9D37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD1C1A24AB304200AD9D37 /* ContentView.swift */; };
 		FDAD1C1D24AB304900AD9D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAD1C1C24AB304900AD9D37 /* Assets.xcassets */; };
 		FDAD1C2024AB304900AD9D37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAD1C1F24AB304900AD9D37 /* Preview Assets.xcassets */; };
 		FDAD1C2324AB304900AD9D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAD1C2124AB304900AD9D37 /* LaunchScreen.storyboard */; };
+		FDAD1C2E24AB3A3D00AD9D37 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD1C2D24AB3A3D00AD9D37 /* NetworkManager.swift */; };
+		FDAD1C3024ABB7F500AD9D37 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD1C2F24ABB7F500AD9D37 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD41429F24AC8911001E40B6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FD4142A124ACB188001E40B6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FD4142A324ACB7BA001E40B6 /* HACKER News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HACKER News.entitlements"; sourceTree = "<group>"; };
 		FDAD1C1324AB304200AD9D37 /* HACKER News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HACKER News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAD1C1624AB304200AD9D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDAD1C1824AB304200AD9D37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		FDAD1C1F24AB304900AD9D37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDAD1C2224AB304900AD9D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDAD1C2424AB304900AD9D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAD1C2D24AB3A3D00AD9D37 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FDAD1C2F24ABB7F500AD9D37 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD41429E24AC88F0001E40B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDAD1C1A24AB304200AD9D37 /* ContentView.swift */,
+				FD41429F24AC8911001E40B6 /* DetailView.swift */,
+				FD4142A124ACB188001E40B6 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FDAD1C0A24AB304200AD9D37 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +75,11 @@
 		FDAD1C1524AB304200AD9D37 /* HACKER News */ = {
 			isa = PBXGroup;
 			children = (
+				FD4142A324ACB7BA001E40B6 /* HACKER News.entitlements */,
 				FDAD1C1624AB304200AD9D37 /* AppDelegate.swift */,
 				FDAD1C1824AB304200AD9D37 /* SceneDelegate.swift */,
-				FDAD1C1A24AB304200AD9D37 /* ContentView.swift */,
+				FD41429E24AC88F0001E40B6 /* Views */,
+				FDAD1C2A24AB396E00AD9D37 /* Models */,
 				FDAD1C1C24AB304900AD9D37 /* Assets.xcassets */,
 				FDAD1C2124AB304900AD9D37 /* LaunchScreen.storyboard */,
 				FDAD1C2424AB304900AD9D37 /* Info.plist */,
@@ -73,6 +94,15 @@
 				FDAD1C1F24AB304900AD9D37 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDAD1C2A24AB396E00AD9D37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDAD1C2D24AB3A3D00AD9D37 /* NetworkManager.swift */,
+				FDAD1C2F24ABB7F500AD9D37 /* PostData.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAD1C3024ABB7F500AD9D37 /* PostData.swift in Sources */,
+				FD4142A024AC8911001E40B6 /* DetailView.swift in Sources */,
+				FDAD1C2E24AB3A3D00AD9D37 /* NetworkManager.swift in Sources */,
 				FDAD1C1724AB304200AD9D37 /* AppDelegate.swift in Sources */,
 				FDAD1C1924AB304200AD9D37 /* SceneDelegate.swift in Sources */,
 				FDAD1C1B24AB304200AD9D37 /* ContentView.swift in Sources */,
+				FD4142A224ACB188001E40B6 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +318,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HACKER News/HACKER News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HACKER News/Preview Content\"";
+				DEVELOPMENT_TEAM = 499ANRRSL2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HACKER News/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.miascom.HACKER-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,8 +340,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HACKER News/HACKER News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HACKER News/Preview Content\"";
+				DEVELOPMENT_TEAM = 499ANRRSL2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HACKER News/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.miascom.HACKER-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
