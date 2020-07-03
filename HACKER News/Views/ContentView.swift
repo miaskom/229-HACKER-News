@@ -33,6 +33,10 @@ struct ContentView: View {
         .onAppear {  //onAppear() - odpowiednik Swiftowego viewDidLoad()
             self.networkManager.fetchData()
         }
+        
+        .onLongPressGesture {
+            //
+        }
     }
 }
 
